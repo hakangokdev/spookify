@@ -1,0 +1,162 @@
+/**
+ * CSS Custom Properties (Variables)
+ * Halloween Party Landing Page Design System
+ * 
+ * These variables can be imported and used in CSS/SCSS files
+ * or accessed via CSS-in-JS solutions.
+ */
+
+:root {
+  /* === COLOR VARIABLES === */
+  
+  /* Primary Colors */
+  --color-primary-main: #FE772D;
+  --color-primary-background: #000015;
+  --color-primary-gray: #333333;
+  
+  /* Text Colors */
+  --color-text-primary: #333333;
+  --color-text-secondary: #FFFFFF;
+  --color-text-light: #F5F5F5;
+  
+  /* Background Colors */
+  --color-bg-primary: #000015;
+  --color-bg-secondary: #000000;
+  --color-bg-overlay: rgba(0, 0, 0, 0.2);
+  
+  /* Accent Colors */
+  --color-accent-orange: #FE772D;
+  --color-accent-dark-gray: #131313;
+  --color-accent-medium-gray: rgba(0, 0, 0, 0.5);
+  --color-accent-light-gray: rgba(0, 0, 0, 0.6);
+  
+  /* Semantic Colors */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-transparent: transparent;
+
+  /* === TYPOGRAPHY VARIABLES === */
+  
+  /* Font Families */
+  --font-family-primary: 'Jolly Lodger', cursive;
+  --font-family-secondary: 'Rubik', sans-serif;
+  --font-family-tertiary: 'Lato', sans-serif;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 48px;
+  --font-size-6xl: 58px;
+  
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.8;
+  
+  /* === TEXT STYLE COMBINATIONS === */
+  
+  /* H1 Style */
+  --text-h1-font-family: var(--font-family-primary);
+  --text-h1-font-size: var(--font-size-6xl);
+  --text-h1-font-weight: var(--font-weight-regular);
+  --text-h1-line-height: var(--line-height-normal);
+  --text-h1-text-transform: uppercase;
+  --text-h1-letter-spacing: 0.02em;
+  
+  /* H2 Style */
+  --text-h2-font-family: var(--font-family-primary);
+  --text-h2-font-size: var(--font-size-4xl);
+  --text-h2-font-weight: var(--font-weight-regular);
+  --text-h2-line-height: var(--line-height-normal);
+  --text-h2-text-transform: uppercase;
+  --text-h2-letter-spacing: 0.02em;
+  
+  /* Body Style */
+  --text-body-font-family: var(--font-family-secondary);
+  --text-body-font-size: var(--font-size-2xl);
+  --text-body-font-weight: var(--font-weight-regular);
+  --text-body-line-height: var(--line-height-normal);
+  --text-body-text-transform: uppercase;
+  
+  /* Section Header Style */
+  --text-section-font-family: var(--font-family-secondary);
+  --text-section-font-size: var(--font-size-5xl);
+  --text-section-font-weight: var(--font-weight-regular);
+  --text-section-line-height: 1.185;
+  
+  /* Label Style */
+  --text-label-font-family: var(--font-family-tertiary);
+  --text-label-font-size: var(--font-size-xl);
+  --text-label-font-weight: var(--font-weight-regular);
+  --text-label-line-height: var(--line-height-normal);
+  --text-label-text-transform: uppercase;
+}
+
+/* === UTILITY CLASSES === */
+
+/* Text Style Classes */
+.text-h1 {
+  font-family: var(--text-h1-font-family);
+  font-size: var(--text-h1-font-size);
+  font-weight: var(--text-h1-font-weight);
+  line-height: var(--text-h1-line-height);
+  text-transform: var(--text-h1-text-transform);
+  letter-spacing: var(--text-h1-letter-spacing);
+}
+
+.text-h2 {
+  font-family: var(--text-h2-font-family);
+  font-size: var(--text-h2-font-size);
+  font-weight: var(--text-h2-font-weight);
+  line-height: var(--text-h2-line-height);
+  text-transform: var(--text-h2-text-transform);
+  letter-spacing: var(--text-h2-letter-spacing);
+}
+
+.text-body {
+  font-family: var(--text-body-font-family);
+  font-size: var(--text-body-font-size);
+  font-weight: var(--text-body-font-weight);
+  line-height: var(--text-body-line-height);
+  text-transform: var(--text-body-text-transform);
+}
+
+.text-section {
+  font-family: var(--text-section-font-family);
+  font-size: var(--text-section-font-size);
+  font-weight: var(--text-section-font-weight);
+  line-height: var(--text-section-line-height);
+}
+
+.text-label {
+  font-family: var(--text-label-font-family);
+  font-size: var(--text-label-font-size);
+  font-weight: var(--text-label-font-weight);
+  line-height: var(--text-label-line-height);
+  text-transform: var(--text-label-text-transform);
+}
+
+/* Color Classes */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-light { color: var(--color-text-light); }
+.text-white { color: var(--color-white); }
+.text-accent { color: var(--color-primary-main); }
+
+.bg-primary { background-color: var(--color-bg-primary); }
+.bg-secondary { background-color: var(--color-bg-secondary); }
+.bg-accent { background-color: var(--color-primary-main); }
+.bg-white { background-color: var(--color-white); }

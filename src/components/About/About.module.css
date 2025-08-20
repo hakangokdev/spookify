@@ -1,0 +1,486 @@
+/* About Component Styles - Figma Design Match */
+@import '../../constants/css-variables.css';
+
+.about {
+  padding: 120px 0;
+  background: var(--color-bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 976px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Heading Section */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.joinUs {
+  font-family: var(--font-family-primary);
+  font-size: 58px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-primary-main);
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mainHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  width: 100%;
+  max-width: 692px;
+}
+
+.arrowLeft,
+.arrowRight {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowLeft svg,
+.arrowRight svg {
+  transition: transform 0.3s ease;
+}
+
+.mainHeading:hover .arrowLeft svg {
+  transform: translateX(-4px);
+}
+
+.mainHeading:hover .arrowRight svg {
+  transform: translateX(4px);
+}
+
+.mainTitle {
+  font-family: var(--font-family-primary);
+  font-size: 58px;
+  font-weight: var(--font-weight-regular);
+  color: #FE2D2D;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+  flex: 1;
+  max-width: 784px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Description */
+.description {
+  font-family: var(--font-family-secondary);
+  font-size: 24px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  max-width: 976px;
+}
+
+/* Ticket Section */
+.ticketSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.ticketCard {
+  background: transparent;
+  border: 2px solid #E6EAEE;
+  border-right: none;
+  border-radius: 16px 0 0 16px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticketIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventDetails {
+  background: transparent;
+  border: 2px solid #E6EAEE;
+  border-left: none;
+  border-radius: 0 16px 16px 0;
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.eventDate {
+  font-family: var(--font-family-secondary);
+  font-size: 20px;
+  font-weight: var(--font-weight-regular);
+  color: #E6EAEE;
+  text-transform: capitalize;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+}
+
+.eventLocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.locationIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.eventLocation span {
+  font-family: var(--font-family-secondary);
+  font-size: 20px;
+  font-weight: var(--font-weight-regular);
+  color: #E6EAEE;
+  text-transform: capitalize;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Features List */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-2px);
+}
+
+.checkIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featureText {
+  font-family: var(--font-family-secondary);
+  font-size: 24px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-light);
+  text-transform: capitalize;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Decorative Line */
+.decorativeLine {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translateX(50%);
+  width: 0;
+  height: 58px;
+  border-left: 2px dashed var(--color-text-light);
+  opacity: 0.5;
+}
+
+/* Decorative Elements */
+.decorativeElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.leftBats {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  opacity: 0.6;
+}
+
+.rightDecoration {
+  position: absolute;
+  top: -20%;
+  right: 10%;
+  opacity: 0.4;
+}
+
+.batsImage,
+.absoluteImage {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    max-width: 800px;
+  }
+
+  .mainHeading {
+    max-width: 600px;
+    gap: 32px;
+  }
+
+  .joinUs,
+  .mainTitle {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .features {
+    gap: 32px;
+  }
+
+  .featureText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+  .heading {
+    gap: 32px;
+  }
+
+  .mainHeading {
+    flex-direction: column;
+    gap: 24px;
+    max-width: none;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    order: 2;
+  }
+
+  .mainTitle {
+    order: 1;
+    max-width: none;
+  }
+
+  .joinUs,
+  .mainTitle {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .ticketSection {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ticketCard {
+    border-radius: 16px 16px 0 0;
+    border-right: 2px solid #E6EAEE;
+    border-bottom: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .eventDetails {
+    border-radius: 0 0 16px 16px;
+    border-left: 2px solid #E6EAEE;
+    border-top: none;
+    width: 100%;
+  }
+
+  .eventLocation {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .eventLocation span {
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .featureItem {
+    justify-content: center;
+  }
+
+  .featureText {
+    font-size: 18px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .decorativeLine {
+    display: none;
+  }
+
+  .leftBats,
+  .rightDecoration {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .content {
+    gap: 32px;
+  }
+
+  .joinUs,
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .eventDate,
+  .eventLocation span {
+    font-size: 16px;
+  }
+
+  .featureText {
+    font-size: 16px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    width: 32px;
+    height: 32px;
+  }
+
+  .arrowLeft svg,
+  .arrowRight svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Focus States for Accessibility */
+.featureItem:focus {
+  outline: 2px solid var(--color-primary-main);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .leftBats,
+  .rightDecoration,
+  .arrowLeft svg,
+  .arrowRight svg,
+  .featureItem {
+    animation: none;
+    transition: none;
+  }
+  
+  .mainHeading:hover .arrowLeft svg,
+  .mainHeading:hover .arrowRight svg {
+    transform: none;
+  }
+  
+  .featureItem:hover {
+    transform: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .about {
+    background: white;
+    color: black;
+  }
+  
+  .decorativeElements {
+    display: none;
+  }
+  
+  .joinUs,
+  .mainTitle {
+    color: black;
+  }
+  
+  .description,
+  .featureText {
+    color: black;
+  }
+  
+  .eventDate,
+  .eventLocation span {
+    color: black;
+  }
+}
