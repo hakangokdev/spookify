@@ -2,6 +2,8 @@
 
 A modern, interactive Halloween party landing page built with Next.js, TypeScript, and Framer Motion. This project features stunning gradient animations, spooky decorative elements, and an immersive user experience perfect for Halloween events.
 
+<img width="1427" height="1310" alt="Image" src="https://github.com/user-attachments/assets/f4d9fd8e-78dc-493b-bcb1-a4817b95b78e" />
+
 ## ✨ Features
 
 ### 🎨 Design & UI
